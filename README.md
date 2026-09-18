@@ -1,6 +1,10 @@
 # Chords CSV Plotter
 
-[![Chords CSV Plotter demo video](https://img.youtube.com/vi/b9qSuuJwDvE/hqdefault.jpg)](https://www.youtube.com/watch?v=b9qSuuJwDvE)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=b9qSuuJwDvE">
+    <img src="media/youtube-thumbnail.png" alt="Chords CSV Plotter demo video" width="640">
+  </a>
+</p>
 
 ## Overview
 
