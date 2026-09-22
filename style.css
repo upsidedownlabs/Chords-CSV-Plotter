@@ -11,7 +11,7 @@
   --bg:#f2f0eb; --surf:#faf9f6; --surf2:#f4f2ee; --surf3:#eceae4;
   --border:rgba(40,37,29,0.14); --divider:rgba(40,37,29,0.07);
   --text:#1a1815; --muted:#575450; --faint:#9e9b96;
-  --primary:#0057d8; --primary-h:#004ab8; --primary-soft:rgba(0,87,216,0.12);
+  --primary:#0057d8; --primary-h:#004ab8; --on-primary:#fff; --primary-soft:rgba(0,87,216,0.12);
   --success:#1a6b38; --error:#c2410c;
   --shadow-sm:0 .0625rem .1875rem rgba(0,0,0,0.08);
   --shadow-md:0 .25rem 1rem rgba(0,0,0,0.1);
@@ -31,7 +31,7 @@
   --bg:#111110; --surf:#1b1a18; --surf2:#222120; --surf3:#2a2927;
   --border:rgba(255,255,255,0.12); --divider:rgba(255,255,255,0.07);
   --text:#f0efec; --muted:#b8b4ae; --faint:#7a7771;
-  --primary:#5b9bff; --primary-h:#7db1ff; --primary-soft:rgba(91,155,255,0.15);
+  --primary:#5b9bff; --primary-h:#7db1ff; --on-primary:#111110; --primary-soft:rgba(91,155,255,0.15);
   --success:#4ade80; --error:#f87171;
   --shadow-sm:0 .0625rem .1875rem rgba(0,0,0,0.4);
   --shadow-md:0 .375rem 1.25rem rgba(0,0,0,0.5);
@@ -202,7 +202,7 @@ canvas{display:block}
 .upload-btn{
   width:var(--topbar-upload-width);height:var(--topbar-button-height);padding:0 var(--space-2);
   align-items:center;gap:.3125rem;flex:0 0 var(--topbar-upload-width);
-  background:var(--primary);color:#fff;border:.0625rem solid transparent;font-size:.625rem;font-weight:600;line-height:1;
+  background:var(--primary);color:var(--on-primary);border:.0625rem solid transparent;font-size:.625rem;font-weight:600;line-height:1;
   transition:background .15s ease;
 }
 .upload-btn svg,.icon-btn svg{display:block;flex-shrink:0}
@@ -372,7 +372,7 @@ canvas{display:block}
 .minimap-resize-pin--right{left:calc(100% + var(--minimap-right-pin-offset,0rem))}
 .minimap-wrap.is-resizing-left .minimap-resize-pin--left::before,
 .minimap-wrap.is-resizing-right .minimap-resize-pin--right::before{
-  background:var(--primary);color:white;
+  background:var(--primary);color:var(--on-primary);
 }
 .minimap-wrap.is-resizing-left .minimap-resize-pin--left,
 .minimap-wrap.is-resizing-right .minimap-resize-pin--right{z-index:6}
@@ -462,7 +462,7 @@ canvas{display:block}
 .empty-upload-btn{
   gap:.375rem;
   height:2.25rem;padding:0 var(--space-4);pointer-events:auto;
-  background:var(--primary);color:#fff;border:.0625rem solid transparent;
+  background:var(--primary);color:var(--on-primary);border:.0625rem solid transparent;
   font-size:.75rem;font-weight:600;line-height:1;
   box-shadow:0 .125rem .5rem var(--primary-soft);
   transition:background .15s ease;
